@@ -1,0 +1,29 @@
+.carts-container {
+  display: grid; 
+  margin: 0 auto;
+  justify-content: center;
+  gap: 10px 10px;
+  max-width: 1000px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.carts-error {
+  font-size: 32px;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .carts-container {
+    grid-template-columns: repeat(2, 0.3fr); 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carts-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+

@@ -1,0 +1,75 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  background-color: #1c1218;
+}
+
+.wrapper-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+}
+
+.btn-outline {
+  padding: 10px 20px;
+  min-width: 150px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  color: #ededed;
+  border: 2px solid #fff;
+}
+
+.btn-add {
+  padding: 10px 20px;
+  min-width: 150px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: #fff;
+  color: #000;
+}
+
+.btn-add:disabled {
+  padding: 10px 20px;
+  min-width: 150px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: #fff;
+  color: #000;
+  opacity: 0.3;
+}
+
+.main-headline {
+  color: #ededed;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-add{
+    padding: 10px 20px;
+    min-width: 75px;
+    font-size: 18px;
+  }
+
+  .btn-add:disabled{
+    padding: 10px 20px;
+    min-width: 75px;
+    font-size: 18px;
+  }
+
+  .btn-outline{
+    padding: 10px 20px;
+    min-width: 75px;
+    font-size: 18px;
+  }
+
+  .main-headline{
+    font-size: 22px;
+  }
+}
